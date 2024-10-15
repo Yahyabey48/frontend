@@ -1,0 +1,114 @@
+/* Navbar */
+nav {
+    background-color: #1a2a40; /* Fond sombre */
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    width: 95%;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    color: #ecf0f1; 
+    text-decoration: none;
+    font-size: 18px; /* Taille plus grande */
+    font-weight: 600; /* Poids de police plus important */
+    transition: all 0.3s ease;
+    padding: 12px 18px; /* Augmentation des zones cliquables */
+    border-radius: 8px;
+}
+
+a:hover {
+    color: #f39c12; 
+    background-color: #34495e;
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(to bottom, rgba(26, 42, 64, 0.8), rgba(26, 42, 64, 0.7)), url('../assets/hero-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ecf0f1;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Taille augmentée */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #f39c12; 
+}
+
+.hero p {
+    font-size: 1.5rem; /* Taille augmentée */
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px; /* Espacement plus large */
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem; /* Taille augmentée */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Rubriques */
+.rubriques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espacement accru */
+    margin: 40px 20px;
+}
+
+.rubrique-card {
+    background-color: #1a2a40;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    color: #ecf0f1;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.rubrique-card:hover {
+    transform: translateY(-10px); /* Élévation plus marquée */
+}
+
+.rubrique-card h2 {
+    font-size: 2rem; /* Taille augmentée */
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.rubrique-card p {
+    font-size: 1.2rem; /* Taille augmentée */
+    color: #bdc3c7;
+}

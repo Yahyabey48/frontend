@@ -1,0 +1,83 @@
+/* src/pages/Voiture.css */
+
+.voiture-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Fond clair pour contraster avec les cartes */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #34495e; /* Couleur sombre pour le titre */
+}
+
+.voiture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste le nombre de colonnes */
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.voiture-card {
+    background-color: #ffffff; /* Fond blanc pour les cartes */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    overflow: hidden; /* Pour arrondir les coins de l'image */
+    transition: transform 0.2s ease-in-out; /* Transition pour un effet de survol */
+}
+
+.voiture-card:hover {
+    transform: translateY(-5px); /* Léger déplacement au survol */
+}
+
+.voiture-card img {
+    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: 150px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Couvrir sans déformer */
+}
+
+.voiture-card h2 {
+    font-size: 1.5rem;
+    padding: 10px 15px; /* Espacement autour du titre */
+    color: #1a2a40; /* Couleur sombre pour le texte */
+}
+
+.details-button {
+    display: block;
+    text-align: center;
+    background-color: #f39c12; /* Couleur du bouton */
+    color: white; /* Texte blanc */
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    margin: 15px; /* Marge autour du bouton */
+}
+
+.details-button:hover {
+    background-color: #e67e22; /* Couleur plus foncée au survol */
+}
+
+/* Styles pour les filtres */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    background-color: #34495e; /* Couleur du bouton de filtre */
+    color: white; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px 15px; /* Espacement */
+    margin: 0 10px; /* Marge */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.filter-button:hover {
+    background-color: #2c3e50; /* Couleur plus foncée au survol */
+}

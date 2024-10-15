@@ -1,0 +1,21 @@
+.voiture-detail {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.voiture-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.voiture-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.voiture-detail p {
+    font-size: 1.2rem;
+    color: #34495e; /* Couleur du texte pour le détail */
+}
